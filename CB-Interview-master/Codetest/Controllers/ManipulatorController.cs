@@ -21,14 +21,9 @@ namespace Codetest.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<ManipulatorModel> Get()
+        public ManipulatorModel Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new ManipulatorModel()
-            {
-                Message = $"Test Message {index}"              
-            })
-            .ToArray();
+            return null;
         }
     }
 }
